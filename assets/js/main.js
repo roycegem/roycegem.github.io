@@ -33,8 +33,9 @@ var calculator = (function() {
     };
 
     var getGematriaVal = function(word, dictionary) {
-        if (!word)
+        if (!word) {
             return;
+        }
         var json = allcalculators[dictionary];
         var chars = word.toUpperCase().split('');
         var numbers = chars.map(function(character) {
