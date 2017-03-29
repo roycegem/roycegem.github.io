@@ -82,7 +82,7 @@ $(document).ready(function() {
         });
         // var $totalSpan = $("<span id='totalSpan'></span>")
         // $("div#sum").append($totalSpan);
-        $("span#totalSpan").text(gematriaObj.total);
+        $("div#totalSpan").text(gematriaObj.total);
 
     });
 
