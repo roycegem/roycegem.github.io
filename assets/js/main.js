@@ -79,13 +79,13 @@ $(document).ready(function() {
         var gematriaObj = calculator.getGematriaObject($(this).val(), "ENGLISH_GEMATRIA");
         $("div#output").empty();
         //$("div#sum").empty();
-        $.each(gematriaObj.stringVals, function(index, stringObj) {
+        /*$.each(gematriaObj.stringVals, function(index, stringObj) {
             $currentBadge = $("<li role='presentation' class='active'><a href='#'>" + stringObj.string + "<span class='badge'>" + stringObj.value + "</span></a></li>");
             $("#wordlist").add($currentBadge);
         });
         var $totalSpan = $("<span id='totalSpan'></span>");
-        $("div#sum").append($totalSpan);
-        //$("span#totalSpan").text("Read the Bible!");
+        $("div#sum").append($totalSpan);*/
+        $("span#totalSpan").text(gematriaObj.total);
 
     });
 
