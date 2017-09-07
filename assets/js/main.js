@@ -40,7 +40,10 @@ var calculator = (function() {
         var numbers = chars.map(function(character) {
             return json[character] || 0;
         });
-        return numbers.reduce((prev, curr) => prev + curr);;
+        if(numbers)
+        {
+            return numbers.reduce((prev, curr) => prev + curr);
+        }
     };
 
     var getGematriaObject = function(paragraph, dictionary) {
@@ -58,7 +61,7 @@ var calculator = (function() {
         gemObject.total = sum;
         return gemObject;
 
-    }
+    };
 
     return {
 
@@ -76,7 +79,7 @@ $(document).ready(function() {
         $("div#output").empty();
         //$("div#sum").empty();
         $.each(gematriaObj.stringVals, function(index, stringObj) {
-            $currentBadge = $("<li role='presentation' class='active'><a href='#'>" + stringObj.string + "<span class='badge'>" + stringObj.value + "</span></a></li>")
+            $currentBadge = $("<li role='presentation' class='active'><a href='#'>" + stringObj.string + "<span class='badge'>" + stringObj.value + "</span></a></li>");
             $("#wordlist").add($currentBadge);
         });
         var $totalSpan = $("<span id='totalSpan'></span>");
