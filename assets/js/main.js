@@ -33,9 +33,8 @@ var calculator = (function() {
     };
 
     var getGematriaVal = function(word, dictionary) {
-        if (!word) {
+        if (!word)
             return;
-        }
         var json = allcalculators[dictionary];
         var chars = word.toUpperCase().split('');
         var numbers = chars.map(function(character) {
@@ -75,14 +74,14 @@ $(document).ready(function() {
     $("input#words").on('keyup', function() {
         var gematriaObj = calculator.getGematriaObject($(this).val(), "ENGLISH_GEMATRIA");
         $("div#output").empty();
-        // $("div#sum").empty();
+        //$("div#sum").empty();
         $.each(gematriaObj.stringVals, function(index, stringObj) {
             $currentBadge = $("<li role='presentation' class='active'><a href='#'>" + stringObj.string + "<span class='badge'>" + stringObj.value + "</span></a></li>")
             $("#wordlist").add($currentBadge);
         });
-        // var $totalSpan = $("<span id='totalSpan'></span>")
-        // $("div#sum").append($totalSpan);
-        $("div#totalSpan").text(gematriaObj.total);
+        var $totalSpan = $("<span id='totalSpan'></span>");
+        $("div#sum").append($totalSpan);
+        //$("span#totalSpan").text("Read the Bible!");
 
     });
 
