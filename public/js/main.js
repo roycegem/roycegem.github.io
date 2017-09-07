@@ -79,9 +79,9 @@ $(document).ready(function() {
             $currentBadge = $("<li role='presentation' class='active'><a href='#'>" + stringObj.string + "<span class='badge'>" + stringObj.value + "</span></a></li>")
             $("#wordlist").add($currentBadge);
         });
-        //var $totalSpan = $("<span id='totalSpan'></span>")
-        //$("div#sum").append($totalSpan);
-        $("span#totalSpan").text("Read the Bible!");
+        var $totalSpan = $("<span id='totalSpan'></span>");
+        $("div#sum").append($totalSpan);
+        //$("span#totalSpan").text("Read the Bible!");
 
     });
 
