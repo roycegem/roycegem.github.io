@@ -40,10 +40,11 @@ var calculator = (function() {
         var numbers = chars.map(function(character) {
             return json[character] || 0;
         });
-        if(numbers)
-        {
-            return numbers.reduce((prev, curr) => prev + curr);
-        }
+        
+        return numbers.reduce(function(sum, value) {
+            return sum + value;
+        }, 0);
+    
     };
 
     var getGematriaObject = function(paragraph, dictionary) {
