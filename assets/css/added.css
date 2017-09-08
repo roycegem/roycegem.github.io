@@ -8,6 +8,7 @@
     text-align: center;
     background: #000;
     margin: auto;
+    padding-top: 25px;
 }
 
 div#innerCircle {
@@ -16,5 +17,6 @@ div#innerCircle {
     border-radius: 23px;
     color: #000;
     background: #fff;
-    position: fixed;
+    position: relative;
+    margin: auto;
 }
