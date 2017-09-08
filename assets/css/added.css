@@ -5,7 +5,6 @@
     font-size: 25px;
     color: #fff;
     line-height: 100px;
-    text-align: center;
     background: #000;
     margin: auto;
     padding-top: 50px;
@@ -17,6 +16,7 @@ div#innerCircle {
     border-radius: 23px;
     color: #000;
     background: #fff;
-    position: relative;
-    margin: auto;
+    text-align: center;
+    margin:auto;
+    vertical-align: top;
 }
