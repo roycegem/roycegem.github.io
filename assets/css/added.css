@@ -16,5 +16,5 @@ div#innerCircle {
     border-radius: 23px;
     color: #000;
     background: #fff;
-    margin: auto;
+    position: fixed;
 }
