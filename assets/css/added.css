@@ -9,3 +9,10 @@
     background: #000;
     margin: auto;
 }
+
+span#totalSpan{
+    color: #000;
+    text-align: center;
+    background: #fff;
+    margin: auto;
+}
