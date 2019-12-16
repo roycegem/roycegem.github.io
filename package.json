@@ -36,7 +36,7 @@
     "lodash": "^4.16.6",
     "lusca": "^1.4.1",
     "mongoose": "^4.6.6",
-    "morgan": "^1.7.0",
+    "morgan": "^1.9.1",
     "multer": "^1.2.0",
     "node-foursquare": "^0.3.0",
     "node-linkedin": "^0.5.4",
