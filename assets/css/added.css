@@ -1,38 +1,40 @@
 .circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    font-size: 25px;
-    color: #fff;
-    background: radial-gradient(circle at 35% 35%, #333, #000 50%, #000);
-    margin: auto;
-    box-shadow: 
-        inset -8px -8px 16px rgba(0, 0, 0, 0.8),
-        inset 8px 8px 16px rgba(255, 255, 255, 0.15),
-        0 20px 40px rgba(0, 0, 0, 0.6);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 25px;
+  color: #fff;
+  background: radial-gradient(circle at 35% 35%, #333, #000 50%, #000);
+  margin: auto;
+  box-shadow: inset -8px -8px 16px rgba(0, 0, 0, 0.8),
+    inset 8px 8px 16px rgba(255, 255, 255, 0.15), 0 20px 40px rgba(0, 0, 0, 0.6);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .circle::before {
-    content: '';
-    position: absolute;
-    top: 15%;
-    left: 15%;
-    width: 40%;
-    height: 40%;
-    background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.4), transparent);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 0;
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 40%;
+  height: 40%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .circle .badge {
-    position: absolute;
-    z-index: 1;
-    top: 35%;
-    left: 35%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  left: 35%;
+  transform: translate(-50%, -50%);
 }
