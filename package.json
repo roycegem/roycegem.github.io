@@ -33,7 +33,7 @@
     "instagram-node": "^0.5.8",
     "lastfm": "^0.9.2",
     "lob": "^7.1.0",
-    "lodash": "^4.16.6",
+    "lodash": "^4.17.23",
     "lusca": "^1.4.1",
     "mongoose": "^6.13.6",
     "morgan": "^1.9.1",
